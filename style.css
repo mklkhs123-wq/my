@@ -1,0 +1,19 @@
+﻿:root{--bg:#f6f8fa;--card:#fff;--accent:#0b66ff;--muted:#666}
+*{box-sizing:border-box;font-family:Inter,system-ui,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:#122;}
+.app{display:flex;min-height:100vh}
+.sidebar{width:220px;background:linear-gradient(180deg,#fff,#f3f7ff);padding:18px;border-right:1px solid #e6e9ef}
+.sidebar h1{font-size:20px;margin:0 0 12px}
+.sidebar nav{display:flex;flex-direction:column;gap:8px}
+.sidebar button{background:transparent;border:0;padding:10px;text-align:left;border-radius:8px;cursor:pointer}
+.sidebar button.active{background:rgba(11,102,255,0.12);color:var(--accent);font-weight:600}
+.main{flex:1;padding:20px}
+.panel{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,50,0.04);max-width:900px}
+.hidden{display:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:12px 0}
+label{display:block;font-size:14px;color:var(--muted)}
+input,select{width:100%;padding:8px;margin-top:6px;border:1px solid #e1e5ee;border-radius:8px}
+button#emi-calc,button#fd-calc,button#sip-calc,button#rd-calc,button#ppf-calc,button#cur-convert{margin-top:8px;padding:10px 14px;border-radius:8px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+.result{margin-top:12px;padding:12px;background:#fbfdff;border:1px solid #eef5ff;border-radius:8px}
+.links a{display:inline-block;margin-right:12px;padding:8px 10px;background:#fff;border-radius:8px;border:1px solid #e6e9ef;text-decoration:none;color:var(--accent)}
+@media(max-width:880px){.sidebar{display:none}.app{flex-direction:column}.main{padding:12px}}
